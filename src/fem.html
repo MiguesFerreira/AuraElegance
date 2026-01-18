@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femininos | AuraElegance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/fem.css">
+</head>
+
+<body class="bg-[#0F0F14]">
+    <!--NavBar-->
+    <header class="fixed top-0 w-full z-[100] bg-[#0F0F14]/95 backdrop-blur-sm shadow-2xl border-b border-white/5">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-serif tracking-[0.3em] text-white" data-aos="fade-right">
+                <a href="../index.html">AURA<span class="text-dourado">ÉLÉGANCE</span></a>
+            </div>
+
+            <ul class="hidden md:flex gap-8 text-white text-[10px] uppercase tracking-widest font-light"
+                data-aos="fade-left">
+                <li><a href="../index.html" class="nav-link-anim transition duration-300">Home</a></li>
+                <li><a href="../src/masc.html" class="nav-link-anim transition duration-300">Masculinos</a></li>
+                <li><a href="#linha" class="nav-link-anim transition duration-300 text-dourado">Feminino</a></li>
+            </ul>
+
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-[#0F0F14] border-t border-white/5 w-full absolute left-0 py-6 px-6 transition-all duration-300 shadow-2xl">
+            <ul class="flex flex-col gap-6 text-white text-xs uppercase tracking-[0.2em] font-light">
+                <li><a href="../index.html" class="mobile-link">Home</a></li>
+                <li><a href="../src/masc.html" class="mobile-link">Masculinos</a></li>
+                <li><a href="#linha" class="mobile-link text-dourado">Feminino</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Linha-->
+    <section class="pt-40 pb-20 bg-gradient-to-b from-[#1a1a24] to-[#0F0F14]" id="linha">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-serif text-white tracking-[0.2em] mb-4" data-aos="fade-up">
+                LINHA <span class="text-dourado">FEMININA</span>
+            </h1>
+            <p class="text-gray-400 font-light tracking-widest text-sm" data-aos="fade-up" data-aos-delay="200">
+                Notas delicadas, personalidade marcante e uma essência que é só sua.
+            </p>
+        </div>
+    </section>
+
+    <!--CardsPerfume-->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+
+            <div class="mb-16 bg-white/5 border border-dashed border-[#C8A24D]/50 p-6 text-center" data-aos="zoom-in">
+                <p class="text-white tracking-widest text-xs uppercase" id="texto">
+                    ✨ Compre um Perfume <span class="text-dourado font-bold">AURA</span> e ganhe <span class="span">10%
+                        OFF</span> na sua
+                    primeira compra!!! ✨
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Amadeirado Intenso</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Black Oud Luxury
+                        </h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Notas de couro, sândalo e especiarias raras. Para homens que buscam autoridade e mistério.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 408,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Cítrico Aromático</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Silver Ocean</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Frescor oceânico combinado com notas de bergamota e musgo de carvalho.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 320,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Oriental Specie</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Royal Tobacco</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Uma mistura ousada de folhas de tabaco e baunilha cremosa para noites memoráveis.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 550,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1557170334-a7c3c4675841?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Fougère</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Urban Night</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Vigoroso e moderno. Lavanda e vetiver projetados para a vida urbana.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 299,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Especiado Quente</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Golden Amber</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Âmbar báltico e canela. Uma fragrância envolvente, quente e magnética.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 445,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1588405863914-2994a539401b?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Couro Nobre</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Midnight Leather
+                        </h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            O aroma do couro italiano luxuoso com um toque sutil de framboesa selvagem.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 510,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1615484477201-9f4953340fab?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Fresco Aquático</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Blue Island</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Liberdade e frescor extremo. Notas marinhas puras com fundo de patchouli.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 259,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1592914610354-fd354ea45e48?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Amadeirado Verde</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Forest Vibe</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            A essência do cedro branco misturada com ervas frescas e pinho.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 385,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1557170334-a7c3c4675841?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Chipre Floral</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Vittorio Gold</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Para o homem clássico. Rosa búlgara, musgo de carvalho e sofisticação pura.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 620,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1512789677070-65bc060ed535?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Aromático</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Icy Mint</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Menta gelada e maçã verde. Explosão de energia pura para enfrentar o dia.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 295,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Amadeirado Especiado</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Desert Storm</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Pimenta preta e vetiver. Uma jornada sensorial intensa pelo deserto.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 415,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1503236123135-0835612d7fc3?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Gourmand</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Dark Chocolate
+                        </h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Cacau intenso com notas de conhaque envelhecido e baunilha negra.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 580,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1595424213982-3396ef46a90d?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Cítrico Vibrante</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Neo Citrus</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            Limão siciliano e gengibre. Elegância leve perfeita para o clima tropical.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 275,00</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-perfume p-5 rounded-lg flex flex-col h-full group" data-aos="fade-up">
+                    <div class="relative overflow-hidden mb-6 rounded-md bg-[#1a1a24] aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1616984748474-213c42872bc5?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="flex flex-col flex-grow text-center">
+                        <span class="text-[10px] text-dourado tracking-[0.3em] uppercase">Oriental Wood</span>
+                        <h3 class="text-white text-lg font-serif tracking-widest mt-2 mb-4 uppercase">Sultan Spirit</h3>
+                        <p class="text-gray-400 text-xs font-light leading-relaxed mb-6 px-2 flex-grow">
+                            A força do oud real combinada com o frescor picante do cardamomo.
+                        </p>
+                        <div class="mb-6">
+                            <div class="text-white text-xl tracking-widest font-light">R$ 450,50</div>
+                        </div>
+                        <a href="#"
+                            class="btn-comprar text-black text-center py-3 text-[12px] font-bold tracking-widest mt-auto">
+                            Adicionar ao Carrinho <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="cart-drawer" class="fixed bottom-8 right-8 z-[110]">
+        <button onclick="toggleCartModal()"
+            class="bg-dourado text-black p-4 rounded-full shadow-2xl flex items-center justify-center relative hover:scale-110 transition-transform">
+            <i class="fas fa-shopping-bag text-xl"></i>
+            <span id="cart-count"
+                class="absolute -top-2 -right-2 bg-white text-black text-[10px] font-bold px-2 py-1 rounded-full border border-black">0</span>
+        </button>
+    </div>
+
+    <div id="cart-modal" class="fixed inset-0 bg-black/80 z-[120] hidden flex items-center justify-center p-4">
+        <div class="bg-[#1a1a24] border border-white/10 w-full max-w-md rounded-lg p-6 shadow-2xl">
+            <div class="flex justify-between items-center mb-6 border-b border-white/5 pb-4">
+                <h2 class="text-white font-serif tracking-widest uppercase text-sm">Seu Pedido</h2>
+                <button onclick="toggleCartModal()" class="text-gray-400 hover:text-white"><i
+                        class="fas fa-times"></i></button>
+            </div>
+
+            <div id="cart-items" class="max-h-[300px] overflow-y-auto mb-6 space-y-4 pr-2">
+                <p class="text-gray-500 text-center py-4">O carrinho está vazio.</p>
+            </div>
+
+            <div class="border-t border-white/5 pt-4">
+                <div class="flex justify-between text-white mb-6 tracking-widest text-sm">
+                    <span>TOTAL:</span>
+                    <span id="cart-total" class="font-bold text-dourado">R$ 0,00</span>
+                </div>
+                <button onclick="finalizarPedido()"
+                    class="w-full bg-dourado text-black font-bold py-4 uppercase tracking-[0.2em] text-[10px] hover:bg-yellow-600 transition-colors">
+                    Finalizar no WhatsApp   <i class="fab fa-whatsapp text-lg group-hover:scale-110 transition-transform"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Rodapé-->
+    <footer class="bg-[#0F0F14] text-white pt-20 pb-10 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-5" data-aos="fade-up">
+                    <div class="text-3xl font-serif text-[#C8A24D] mb-4 tracking-[0.4em]">AURAÉLÉGANCE</div>
+                    <p class="text-gray-400 font-light italic text-sm">A essência que revela quem você é.</p>
+                </div>
+
+                <div class="md:col-span-3 flex flex-col items-start" data-aos="fade-up" data-aos-delay="100">
+                    <h4
+                        class="text-white text-sm font-bold uppercase tracking-[0.3em] mb-8 border-b border-[#C8A24D] pb-2">
+                        Navegação
+                    </h4>
+                    <ul class="space-y-4 text-[11px] uppercase tracking-widest text-gray-400">
+                        <li><a href="../index.html" class="mobile-link">Home</a></li>
+                        <li><a href="../src/masc.html" class="mobile-link">Masculinos</a></li>
+                        <li><a href="#linha" class="mobile-link">Feminino</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 flex flex-col items-start md:ml-20" data-aos="fade-up" data-aos-delay="200">
+                    <h4
+                        class="text-white text-sm font-bold uppercase tracking-[0.3em] mb-8 border-b border-[#C8A24D] pb-2">
+                        Social
+                    </h4>
+                    <div class="flex gap-8">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/auraelegance1?igsh=M2VsMHllNXU3MmMz&utm_source=qr"
+                            class="text-gray-400 hover:text-[#C8A24D] transition-all duration-300 transform hover:-translate-y-1 text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://chat.whatsapp.com/KZ43JqP4YZPHSDKThttxI0"
+                            class="text-gray-400 hover:text-[#C8A24D] transition-all duration-300 transform hover:-translate-y-1 text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="grid md:grid-cols-3 gap-8 text-[10px] text-gray-600 border-t border-white/5 mt-16 pt-10 uppercase tracking-widest text-center">
+                <div>📍 Atendimento para todo o Brasil</div>
+                <div>© 2026 AuraElegance - Todos os Direitos Reservados</div>
+                <div>Feito para pessoas exclusivas</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../src/js/fem.js"></script>
+    
+</body>
+</html>
