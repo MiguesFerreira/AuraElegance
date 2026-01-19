@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraElegance | Alta Perfumaria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div id="intro-loader" class="fixed inset-0 z-[999] bg-[#0F0F14] flex items-center justify-center overflow-hidden">
+        <div id="intro-content" class="text-center">
+            <div class="overflow-hidden mb-2">
+                <h2 id="intro-logo"
+                    class="text-2xl md:text-4xl font-serif tracking-[0.4em] text-white opacity-0 translate-y-full">
+                    AURA<span class="text-dourado">ÉLÉGANCE</span>
+                </h2>
+            </div>
+            <div id="intro-line" class="w-0 h-[1px] bg-dourado mx-auto transition-all duration-1000 ease-in-out"></div>
+        </div>
+    </div>
+
+    <!--NavBar-->
+    <header class="fixed top-0 w-full z-[100] bg-[#0F0F14]/95 backdrop-blur-sm shadow-2xl border-b border-white/5">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-serif tracking-[0.3em] text-white" data-aos="fade-right">
+                <a href="index.html">AURA<span class="text-dourado">ÉLÉGANCE</span></a>
+            </div>
+            <ul class="hidden md:flex gap-8 text-white text-[10px] uppercase tracking-widest font-light"
+                data-aos="fade-left">
+                <li><a href="#sobre" class="nav-link-anim transition duration-300">Sobre Nós</a></li>
+                <li><a href="#destaques" class="nav-link-anim transition duration-300">Destaques</a></li>
+                <li><a href="#feminino" class="nav-link-anim transition duration-300">Femininos</a></li>
+                <li><a href="#masculino" class="nav-link-anim transition duration-300">Masculinos</a></li>
+                <li><a href="#depoimentos" class="nav-link-anim transition duration-300">Depoimentos</a></li>
+                <li><a href="#faq" class="nav-link-anim transition duration-300">Suporte</a></li>
+                <li><a href="#contatos" class="nav-link-anim transition duration-300">Contate-nos</a></li>
+            </ul>
+
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-[#0F0F14] border-t border-white/5 w-full absolute left-0 py-6 px-6 transition-all duration-300 shadow-2xl">
+            <ul class="flex flex-col gap-6 text-white text-xs uppercase tracking-[0.2em] font-light">
+                <li><a href="#sobre" class="mobile-link">Sobre Nós</a></li>
+                <li><a href="#destaques" class="mobile-link">Destaques</a></li>
+                <li><a href="#feminino" class="mobile-link">Femininos</a></li>
+                <li><a href="#masculino" class="mobile-link">Masculinos</a></li>
+                <li><a href="#depoimentos" class="mobile-link">Depoimentos</a></li>
+                <li><a href="#faq" class="mobile-link">Suporte</a></li>
+                <li><a href="#contatos" class="mobile-link">Contate-nos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Home-->
+    <section id="hero"
+        class="relative min-h-screen w-full flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="src/img/hero.jpg" class="w-full h-full object-cover" alt="Background Perfume">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div class="relative z-10 px-6 pt-20" data-aos="zoom-in" data-aos-duration="1200">
+            <span class="text-dourado uppercase tracking-[0.5em] text-sm mb-4 block">Exclusividade & Sofisticação</span>
+            <h1 class="text-5xl md:text-8xl mb-6 font-serif">Fragrâncias que <br> <span class="italic">eternizam
+                    momentos</span>
+            </h1>
+            <div class="flex flex-col md:flex-row gap-6 justify-center mt-10">
+                <a href="#feminino"
+                    class="btn-dourado px-10 py-4 rounded-full text-xs font-bold uppercase tracking-widest">
+                    Coleção Feminina
+                </a>
+                <a href="#masculino"
+                    class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white hover:text-black px-10 py-4 rounded-full text-xs font-bold uppercase tracking-widest transition">
+                    Coleção Masculina
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Quem Somos-->
+    <section id="sobre" class="py-24 bg-[#FAF9F6]">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+
+                 <div class="md:w-1/2 h-[700px]" data-aos="fade-left">
+                    <div class="w-full h-full overflow-hidden shadow-2xl rounded-sm">
+                        <img src="src/img/WhatsApp Image 2026-01-18 at 00.52.03.jpeg" class="w-full h-full object-cover  transition duration-1000"
+                            alt="Perfume Luxury" style="border-radius: 15px;">
+                    </div>
+                </div>
+
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <span class="text-dourado uppercase tracking-widest text-xs font-bold mb-4 block">Nossa
+                        Essência</span>
+                    <h2 class="text-5xl font-serif mb-8 leading-tight">Quem Somos</h2>
+                    <p class="text-gray-600 leading-relaxed mb-10 font-light text-lg">
+                        A AuraElegance nasceu da união entre a tradição da perfumaria francesa e a modernidade
+                        brasileira.
+                        Nossa jornada é movida pela busca constante do aroma perfeito, aquele que não apenas perfuma,
+                        mas que conta uma história e reafirma a presença de quem o usa.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 mb-12">
+                        <div class="bg-white p-6 shadow-sm border-l-2 border-dourado">
+                            <h4 class="font-bold text-xs uppercase tracking-widest mb-2">Missão</h4>
+                            <p class="text-[11px] text-gray-500 italic">Elevar a autoestima através de fragrâncias de
+                                luxo que celebram a individualidade.</p>
+                        </div>
+                        <div class="bg-white p-6 shadow-sm border-l-2 border-dourado">
+                            <h4 class="font-bold text-xs uppercase tracking-widest mb-2">Valores</h4>
+                            <p class="text-[11px] text-gray-500 italic">Ética, sofisticação, sustentabilidade e paixão
+                                pelo que é extraordinário.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20">
+                <div class="value-card p-10 text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-award text-dourado text-3xl mb-4"></i>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest">Qualidade</h4>
+                </div>
+                <div class="value-card p-10 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-eye text-dourado text-3xl mb-4"></i>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest">Transparência</h4>
+                </div>
+                <div class="value-card p-10 text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-crown text-dourado text-3xl mb-4"></i>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest">Elegância</h4>
+                </div>
+                <div class="value-card p-10 text-center" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-heart text-dourado text-3xl mb-4"></i>
+                    <h4 class="text-[10px] font-bold uppercase tracking-widest">Respeito</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Destaques-->
+    <section id="destaques" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <span class="text-dourado uppercase tracking-widest text-xs italic block mb-2">Curadoria Especial</span>
+                <h2 class="text-4xl font-serif">Destaques da Semana</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="group text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="overflow-hidden rounded-sm mb-6 shadow-xl">
+                        <img src="src/img/jay-soundo-a4y2zKc2Zyc-unsplash.jpg" class="w-full h-[450px] object-cover" alt="" style="border-radius: 15px;">
+                    </div>
+                    <h3 class="text-xl font-serif mb-1">L'Éclat d'Or</h3>
+                    <p class="text-gray-400 text-[10px] uppercase tracking-widest mb-3">Floral Intenso</p>
+                    <p class="text-lg font-light mb-4">R$ 289,90</p>
+                    <a href="#feminino"><button
+                            class="btn-interactive px-8 py-3 text-[10px] uppercase tracking-widest rounded-full w-full md:w-auto">
+                            Comprar Agora
+                        </button></a>
+                </div>
+
+                <div class="group text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="overflow-hidden rounded-sm mb-6 shadow-xl">
+                        <img src="src/img/jay-soundo-QkC2gICf0zc-unsplash.jpg" class="w-full h-[450px] object-cover" alt="" style="border-radius: 15px;">
+                    </div>
+                    <h3 class="text-xl font-serif mb-1">Mystic Noir</h3>
+                    <p class="text-gray-400 text-[10px] uppercase tracking-widest mb-3">Amadeirado Nobre</p>
+                    <p class="text-lg font-light mb-4">R$ 349,00</p>
+                    <a href="#masculino"><button
+                            class="btn-interactive px-8 py-3 text-[10px] uppercase tracking-widest rounded-full w-full md:w-auto">
+                            Comprar Agora
+                        </button></a>
+                </div>
+
+                <div class="group text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="overflow-hidden rounded-sm mb-6 shadow-xl">
+                        <img src="src/img/parth-natani-uqJdOfHGb-w-unsplash.jpg" class="w-full h-[450px] object-cover" alt="" style="border-radius: 15px;">
+                    </div>
+                    <h3 class="text-xl font-serif mb-1">Aura Divine</h3>
+                    <p class="text-gray-400 text-[10px] uppercase tracking-widest mb-3">Cítrico Refrescante</p>
+                    <p class="text-lg font-light mb-4">R$ 255,00</p>
+                    <a href="#feminino"><button
+                            class="btn-interactive px-8 py-3 text-[10px] uppercase tracking-widest rounded-full w-full md:w-auto">
+                            Comprar Agora
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Feminino-->
+    <section id="feminino" class="py-24 bg-[#F5EFE8]">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl md:text-5xl mb-8">Essência Feminina</h2>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed font-light">Delicadeza e intensidade traduzidas em
+                    notas florais e adocicadas. Criamos experiências olfativas para mulheres que não aceitam o comum.
+                </p>
+                <div class="space-y-4 mb-10">
+                    <div class="flex items-center gap-4 border-b border-black/10 pb-2">
+                        <span class="text-dourado">01.</span> <span class="uppercase tracking-widest text-sm">Florais
+                            Preciosos</span>
+                    </div>
+                    <div class="flex items-center gap-4 border-b border-black/10 pb-2">
+                        <span class="text-dourado">02.</span> <span
+                            class="uppercase tracking-widest text-sm">Amadeirados Sofisticados</span>
+                    </div>
+                </div>
+                <a href="src/fem.html"  class="inline-block link-transicao"><button
+                        class="bg-[#0F0F14] text-white px-12 py-4 text-xs tracking-[0.2em] hover:bg-[#C8A24D] hover:text-white transition-all duration-300 shadow-lg">EXPLORAR
+                        CATÁLOGO</button></a>
+            </div>
+            <div class="h-[600px] bg-cover bg-center shadow-2xl rounded-lg" data-aos="fade-left"><img src="src/img/feminino.jpg" alt="imagemFeminina" style="height: 600px; width: 730px; border-radius: 15px;"></div>
+        </div>
+    </section>
+
+    <!--Masculino-->
+    <section id="masculino" class="py-24 bg-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1 h-[600px] bg-cover bg-center shadow-2xl rounded-lg"
+                data-aos="fade-right"><img src="src/img/masculino.jpg" alt="imagemMasculina" style="height: 600px; width: 730px; border-radius: 15px;"></div>
+
+            <div class="order-1 md:order-2" data-aos="fade-left">
+                <h2 class="text-4xl md:text-5xl mb-8 font-serif">Essência Masculina</h2>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed font-light">
+                    Poder e autenticidade. Nossa linha masculina foca em aromas marcantes,
+                    cítricos modernos e orientais sedutores de altíssima fixação.
+                </p>
+                <a href="src/masc.html" class="inline-block link-transicao">
+                    <button
+                        class="bg-[#0F0F14] text-white px-12 py-4 text-xs tracking-[0.2em] hover:bg-[#C8A24D] hover:text-white transition-all duration-300 shadow-lg">
+                        VER COLEÇÃO MASCULINA
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Depoimentos-->
+    <section id="depoimentos" class="py-24 bg-preto text-white overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-[10px] text-dourado tracking-[0.5em] uppercase mb-2 block"
+                data-aos="fade-up">Experiência</span>
+            <h2 class="text-3xl font-serif text-white mb-16 tracking-widest" data-aos="fade-up">AURA<span
+                    class="span">ELEGANCE</span> FEEDBACK
+            </h2>
+
+            <div class="max-w-3xl mx-auto relative h-72" data-aos="zoom-in">
+                <div class="testimonial-slide active">
+                    <div class="flex justify-center gap-1 mb-6 text-dourado text-xs">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-xl md:text-2xl font-light italic mb-6">"A fixação é simplesmente impecável. Usei pela
+                        manhã e à noite ainda recebia elogios sobre a fragrância."</p>
+                    <div class="flex flex-col items-center">
+                        <span class="text-dourado tracking-[0.3em] uppercase text-sm mb-2">— Mariana S.</span>
+                        <span
+                            class="bg-white/10 text-[9px] px-3 py-1 rounded-full border border-white/20 flex items-center gap-2 uppercase tracking-widest">
+                            <i class="fas fa-check-circle text-green-400"></i> Cliente Verificado
+                        </span>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="flex justify-center gap-1 mb-6 text-dourado text-xs">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-xl md:text-2xl font-light italic mb-6">"Entrega rápida e uma embalagem que já
+                        demonstra todo o luxo da marca. Me tornei cliente fiel."</p>
+                    <div class="flex flex-col items-center">
+                        <span class="text-dourado tracking-[0.3em] uppercase text-sm mb-2">— Lucas R.</span>
+                        <span
+                            class="bg-white/10 text-[9px] px-3 py-1 rounded-full border border-white/20 flex items-center gap-2 uppercase tracking-widest">
+                            <i class="fas fa-check-circle text-green-400"></i> Cliente Verificado
+                        </span>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="flex justify-center gap-1 mb-6 text-dourado text-xs">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-xl md:text-2xl font-light italic mb-6">"Fragrâncias inspiradas com fidelidade
+                        impressionante. O custo-benefício é incomparável."</p>
+                    <div class="flex flex-col items-center">
+                        <span class="text-dourado tracking-[0.3em] uppercase text-sm mb-2">— Ana P.</span>
+                        <span
+                            class="bg-white/10 text-[9px] px-3 py-1 rounded-full border border-white/20 flex items-center gap-2 uppercase tracking-widest">
+                            <i class="fas fa-check-circle text-green-400"></i> Cliente Verificado
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center gap-4 mt-12">
+                    <button onclick="changeSlide(-1)"
+                        class="border border-dourado/30 p-2 rounded-full hover:bg-dourado/20 transition text-dourado">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button onclick="changeSlide(1)"
+                        class="border border-dourado/30 p-2 rounded-full hover:bg-dourado/20 transition text-dourado">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Segredos-->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-serif text-center mb-16 italic" data-aos="fade-up">Segredos da Alta Perfumaria</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="fragrance-card p-10 rounded-xl text-center" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-leaf text-dourado text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Matéria-Prima</h3>
+                    <p class="text-gray-500 text-sm font-light">Utilizamos óleos essenciais importados das melhores
+                        regiões do mundo para garantir pureza.</p>
+                </div>
+                <div class="fragrance-card p-10 rounded-xl text-center" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-flask text-dourado text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Concentração</h3>
+                    <p class="text-gray-500 text-sm font-light">Nossos perfumes possuem concentração de Parfum,
+                        garantindo rastro e projeção excepcionais.</p>
+                </div>
+                <div class="fragrance-card p-10 rounded-xl text-center" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-gem text-dourado text-3xl mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Exclusividade</h3>
+                    <p class="text-gray-500 text-sm font-light">Cada nota é selecionada para criar uma harmonia única
+                        que se adapta ao seu pH.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Duvidas-->
+    <section id="faq" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-dourado uppercase tracking-[0.3em] text-[12px]  block mb-2">Suporte</span>
+                <h2 class="text-4xl font-serif">Dúvidas Frequentes</h2>
+            </div>
+
+            <div class="grid gap-6" data-aos="fade-up">
+                <details
+                    class="group border border-gray-100 p-6 rounded-lg cursor-pointer transition-all hover:border-dourado/20">
+                    <summary class="list-none flex justify-between items-center font-semibold text-lg">
+                        Os perfumes são inspirados?
+                        <span class="text-dourado transition group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-500 leading-relaxed">
+                        Sim. Nossas fragrâncias são inspiradas nos grandes sucessos mundiais, produzidas com essências
+                        premium para garantir similaridade e alta performance.
+                    </p>
+                </details>
+
+                <details
+                    class="group border border-gray-100 p-6 rounded-lg cursor-pointer transition-all hover:border-dourado/20">
+                    <summary class="list-none flex justify-between items-center font-semibold text-lg">
+                        Qual a fixação média?
+                        <span class="text-dourado transition group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-500 leading-relaxed">
+                        Nossa fixação varia de 8h a 12h, dependendo da família olfativa e do tipo de pele, devido à alta
+                        concentração de essência.
+                    </p>
+                </details>
+
+                <details
+                    class="group border border-gray-100 p-6 rounded-lg cursor-pointer transition-all hover:border-dourado/20">
+                    <summary class="list-none flex justify-between items-center font-semibold text-lg">
+                        Quais as formas de pagamento?
+                        <span class="text-dourado transition group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-500 leading-relaxed">
+                        Aceitamos Pix, cartões de crédito e débito, além de boleto bancário, sempre garantindo a
+                        segurança e a privacidade dos seus dados.
+                    </p>
+                </details>
+
+                <details
+                    class="group border border-gray-100 p-6 rounded-lg cursor-pointer transition-all hover:border-dourado/20">
+                    <summary class="list-none flex justify-between items-center font-semibold text-lg">
+                        É seguro comprar no site?
+                        <span class="text-dourado transition group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-500 leading-relaxed">
+                        Totalmente. Utilizamos certificados de segurança SSL e processadores de pagamento criptografados
+                        para garantir sua total proteção.
+                    </p>
+                </details>
+
+                <details
+                    class="group border border-gray-100 p-6 rounded-lg cursor-pointer transition-all hover:border-dourado/20">
+                    <summary class="list-none flex justify-between items-center font-semibold text-lg">
+                        Os perfumes vendidos são originais?
+                        <span class="text-dourado transition group-open:rotate-45">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-500 leading-relaxed">
+                        Sim. Todos os perfumes comercializados pela AuraElegance são 100% originais e adquiridos
+                        exclusivamente de distribuidores autorizados e fornecedores oficiais.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!--Contatos-->
+    <section id="contatos" class="py-24 bg-[#F9F9F9]">
+        <div class="container mx-auto px-6 max-w-2xl">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-dourado uppercase tracking-[0.3em] text-[10px] font-bold block mb-2">Contato</span>
+                <h2 class="text-4xl font-serif text-[#0F0F14]">Fale Conosco</h2>
+                <p class="text-gray-400 font-light italic text-sm mt-4">Personalize seu pedido ou tire suas dúvidas via
+                    WhatsApp</p>
+            </div>
+
+            <form class="bg-[#fff] p-8 md:p-12 shadow-2xl border border-white/5 rounded-2xl" id="formulario"
+                onsubmit="enviarWhats(event)" data-aos="fade-up">
+
+                <div class="mb-8">
+                    <label for="nome"
+                        class="block text-[10px] uppercase tracking-widest text-dourado mb-2 ml-1 font-bold">
+                        Seu Nome
+                    </label>
+                    <input type="text" id="nome" placeholder="Ex: Maria Silva"
+                        class="w-full bg-transparent border-b border-black/10 py-3 px-1 outline-none focus:border-dourado transition-colors duration-300 font-light text-black placeholder:text-gray-600">
+                </div>
+
+                <div class="mb-10">
+                    <label for="mensagem"
+                        class="block text-[10px] uppercase tracking-widest text-dourado mb-2 ml-1 font-bold">
+                        Como podemos ajudar?
+                    </label>
+                    <textarea id="mensagem" placeholder="Descreva sua dúvida..." rows="1"
+                        oninput="this.style.height = 'auto'; this.style.height = (this.scrollHeight) + 'px';"
+                        class="w-full bg-transparent border-b border-black/10 py-3 px-1 outline-none focus:border-dourado transition-colors duration-300 font-light text-black placeholder:text-gray-600 resize-none overflow-hidden block"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="botao-contato w-full bg-black text-[#fff] py-5 text-[10px] uppercase tracking-[0.2em] font-bold transition-all duration-500 rounded-xl shadow-xl flex items-center justify-center gap-3 group">
+                    Enviar via WhatsApp
+                    <i class="fab fa-whatsapp text-lg group-hover:scale-110 transition-transform"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!--Rodapé-->
+    <footer class="bg-[#0F0F14] text-white pt-20 pb-10 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+
+                <div class="md:col-span-5" data-aos="fade-up">
+                    <div class="text-3xl font-serif text-[#C8A24D] mb-4 tracking-[0.4em]">AURAÉLÉGANCE</div>
+                    <p class="text-gray-400 font-light italic text-sm">A essência que revela quem você é.</p>
+                </div>
+
+                <div class="md:col-span-3 flex flex-col items-start" data-aos="fade-up" data-aos-delay="100">
+                    <h4
+                        class="text-white text-sm font-bold uppercase tracking-[0.3em] mb-8 border-b border-[#C8A24D] pb-2">
+                        Navegação
+                    </h4>
+                    <ul class="space-y-4 text-[11px] uppercase tracking-widest text-gray-400">
+                        <li><a href="#sobre" class="mobile-link">Sobre Nós</a></li>
+                        <li><a href="#destaques" class="mobile-link">Destaques</a></li>
+                        <li><a href="#feminino" class="mobile-link">Femininos</a></li>
+                        <li><a href="#masculino" class="mobile-link">Masculinos</a></li>
+                        <li><a href="#depoimentos" class="mobile-link">Depoimentos</a></li>
+                        <li><a href="#faq" class="mobile-link">Suporte</a></li>
+                        <li><a href="#contatos" class="mobile-link">Contate-nos</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 flex flex-col items-start md:ml-20" data-aos="fade-up" data-aos-delay="200">
+                    <h4
+                        class="text-white text-sm font-bold uppercase tracking-[0.3em] mb-8 border-b border-[#C8A24D] pb-2">
+                        Social
+                    </h4>
+                    <div class="flex gap-8">
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://www.instagram.com/auraelegance1?igsh=M2VsMHllNXU3MmMz&utm_source=qr"
+                            class="text-gray-400 hover:text-[#C8A24D] transition-all duration-300 transform hover:-translate-y-1 text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer"
+                            href="https://chat.whatsapp.com/KZ43JqP4YZPHSDKThttxI0"
+                            class="text-gray-400 hover:text-[#C8A24D] transition-all duration-300 transform hover:-translate-y-1 text-2xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="grid md:grid-cols-3 gap-8 text-[10px] text-gray-600 border-t border-white/5 mt-16 pt-10 uppercase tracking-widest text-center">
+                <div>📍 Atendimento para todo o Brasil</div>
+                <div>© 2026 AuraElegance - Todos os Direitos Reservados</div>
+                <div>Feito para pessoas exclusivas</div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Cookies-->
+    <div id="cookie-banner" data-aos="fade-up" class="fixed bottom-10 left-0 w-full z-50 px-4 flex justify-center">
+        <div
+            class="inline-flex items-center bg-white/95 backdrop-blur-md shadow-2xl rounded-full border border-gray-100 py-3 px-10 gap-10">
+
+            <p class="text-[11px] text-gray-500 leading-none whitespace-nowrap">
+                Este site utiliza cookies 🍪 para uma experiência personalizada.
+                Ao continuar, você concorda com nossa
+                <a href="./src/cookies.html" class="text-black font-bold underline hover:text-gray-700"
+                    target="_blank">Política de
+                    Cookies</a>.
+            </p>
+
+            <div class="h-4 w-[1px] bg-gray-200"></div>
+
+            <div class="flex gap-6 items-center">
+                <button onclick="hideCookies()"
+                    class="text-[10px] uppercase font-bold text-gray-400 hover:text-red-500 transition-colors duration-300 whitespace-nowrap">
+                    Rejeitar
+                </button>
+
+                <button onclick="hideCookies()"
+                    class="group relative bg-black text-white px-7 py-2.5 rounded-full text-[10px] uppercase font-bold tracking-[1px] transition-all duration-300 
+                           hover:shadow-[0_0_15px_rgba(0,0,0,0.4)] hover:brightness-125 hover:scale-105 active:scale-95 whitespace-nowrap overflow-hidden">
+
+                    <span
+                        class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
+
+                    <span class="relative z-10">Aceitar Cookies</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
